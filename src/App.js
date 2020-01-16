@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import PropComp from './components/PropComp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PropComp firstName={" ,Jane"} lastName={"Doe"}/>
+      <PropComp Age={"Age: 45"}/>
+      <PropComp hairColor={"Hair Color: Black"}/>
+
+      <PropComp firstName={" ,John"} lastName={"Smith"}/>
+      <PropComp Age={"Age: 88"}/>
+      <PropComp hairColor={"Hair Color: Brown"}/>
+
+      <PropComp firstName={" ,Millard"} lastName={"Fillmore"}/>
+      <PropComp Age={"Age: 50"}/>
+      <PropComp hairColor={"Hair Color: Brown"}/>
+
+      <PropComp firstName={" ,Maria"} lastName={"Smith"}/>
+      <PropComp Age={"Age: 62"}/>
+      <PropComp hairColor={"Hair Color: Brown"}/>
     </div>
   );
 }
